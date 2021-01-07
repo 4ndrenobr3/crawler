@@ -1,0 +1,20 @@
+{
+    "name": "andrenobre/crawler",
+    "description": "Estudo do component DomCrawler.",
+    "authors": [
+        {
+            "name": "4ndrenobr3",
+            "email": "nobre4ndr3@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "symfony/dom-crawler": "^5.2",
+        "symfony/css-selector": "^5.2"
+    }
+}
