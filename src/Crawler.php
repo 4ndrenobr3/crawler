@@ -20,14 +20,12 @@ class Crawler
             $brand = $contentContainer->filter('span[class="marca-ano-capas"]')->text();
             $year  = $contentContainer->filter('span[class="anos-capas"]')->text();
             $price = $contentContainer->filter('span[class="valor-capas"]')->text();
-            $photo = $contentContainer->filter('a')->link();
 
             return [
                 'title' => $Title,
                 'brand' => $brand,
                 'year'  => $year,
                 'price' => $price,
-                'photo' => $photo
             ];
         });
 
